@@ -1,0 +1,250 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  background-color: yellow;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+  display: flex;
+  overflow-x: hidden;
+}
+p {
+  margin: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: rgb(26, 31, 80);
+  display: flex;
+  width: 100vw;
+  height: 120px;
+  color: white;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header img {
+  height: 50%;
+  filter: brightness(0) invert(1);
+}
+main {
+  background-color: rgb(192, 225, 255);
+}
+.margin-bt-3 {
+  margin-bottom: 1.5rem;
+}
+.error {
+  color: red;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.exito {
+  color: green;
+}
+.exito strong {
+  font-size: 1.3rem;
+}
+/* Contenido ------------------------------------------------------------------ */
+.pokedex-container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.pokedex-container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.pokemon-title {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+.pokemon-card {
+  flex: 0 1 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-top-right-radius: 50px;
+  border-left-width: thick;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 10px;
+  background-color: #fff;
+  min-height: 190px;
+}
+span.pokemon-id {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.pokemon-card h3 {
+  margin: 0;
+  padding: 5px;
+}
+.pomekon-img {
+  text-align: center;
+}
+.search-container input {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  min-width: 200px;
+}
+.search-container button {
+  background-color: rgb(26, 31, 80);
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.search-container button:hover {
+  background-color: blue;
+}
+.backButton {
+  padding-top: 20px;
+}
+.backButton button {
+  background-color: rgb(26, 31, 80);
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  display: none;
+}
+.backButton button:hover {
+  background-color: blue;
+}
+.pagination-buttons {
+  text-align: center;
+  padding-top: 20px;
+}
+.pagination-buttons button {
+  background-color: rgb(26, 31, 80);
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.pagination-buttons button:last-child {
+  margin-right: 0px;
+}
+.pagination-buttons button:hover {
+  background-color: blue;
+}
+.pagination-buttons button:disabled {
+  opacity: 0.5;
+  background-color: #b6b6b6;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  cursor: not-allowed;
+}
+.pagination-buttons #totalPokemon {
+  display: block;
+  padding-top: 10px;
+}
+.pagination-buttons .greenB {
+  background-color: green;
+}
+.p-view {
+  background-color: #fffbcf;
+}
+.p-catch {
+  background-color: #d7f7d7;
+}
+.p-inteam {
+  background-color: #dad6fd;
+}
+ul.pokemon-status {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  padding-top: 8px;
+}
+ul.pokemon-status li {
+  margin-right: 8px;
+}
+ul.pokemon-status li span {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+  color: #fff;
+  border: 2px solid #999;
+}
+.p-view ul.pokemon-status li:nth-child(1) span {
+  background-color: yellow;
+  color: #000;
+  border: 2px solid #000;
+}
+.p-catch ul.pokemon-status li:nth-child(2) span {
+  background-color: green;
+  color: #fff;
+  border: 2px solid #000;
+}
+.p-inteam ul.pokemon-status li:nth-child(3) span {
+  background-color: #5949ed;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+/* Footer ------------------------------------------------------------------ */
+footer {
+  background-color: rgb(26, 31, 80);
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+footer img {
+  height: 100px;
+}
+.perfil {
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+.perfil img {
+  border-radius: 50%;
+  padding-left: 35px;
+}
+.perfil p {
+  padding-left: 30px;
+  font-size: 1.5rem;
+}
+.copyright {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+.copyright p {
+  padding-right: 30px;
+}
